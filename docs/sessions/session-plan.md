@@ -77,3 +77,30 @@ packaging.
 
 > Do NOT hand-author `sessions.json`. The first `session start`
 > bootstraps it from this plan — state files are the writers' job.
+
+### Session 3: The calculator page
+
+1. Register.
+2. Add `src/main/java/org/springframework/samples/petclinic/web/Calculator.java`,
+   a class with `add` and `subtract`, each taking two `BigDecimal`s and
+   returning their sum or difference.
+3. Add `src/main/java/org/springframework/samples/petclinic/web/CalculatorController.java`,
+   mapped to `/calculator`: GET shows the form, POST takes `left` and
+   `right` and adds `sum` and `difference` to the model; both return
+   `calculators/calculator`. Add the view
+   `src/main/webapp/WEB-INF/jsp/calculators/calculator.jsp` in the
+   `petclinic:layout` tag, and a Calculator item in
+   `src/main/webapp/WEB-INF/tags/menu.tag`.
+4. Add `src/test/java/org/springframework/samples/petclinic/web/CalculatorControllerTests.java`,
+   configured like the other controller tests, checking the GET view and
+   the POST model. The wrapper's `test` runs it; the maven suite in
+   `dabbler.yaml` selects it by the plural `*Tests.java` glob.
+
+### Session 4: Documentation comments on the calculator
+
+1. Register.
+2. Add Javadoc to `Calculator`, `add` and `subtract`, and to
+   `CalculatorController` and its handler methods. No code line changes.
+3. Add a JSP comment (`<%-- --%>`) at the top of
+   `src/main/webapp/WEB-INF/jsp/calculators/calculator.jsp` saying what
+   the page is. No markup changes. The wrapper's `test` still passes.

@@ -8,6 +8,13 @@
       "dateTime": "2026-11-10T18:56:15.289000-05:00",
       "task": "Session 1 writes docs/planning/solution-plan.md from docs/planning/brief.md and nothing else: one paragraph on the repository as found -- one Maven WAR on Spring Framework 7.0.10 at Java 17, built by the Maven wrapper, controllers in org.springframework.samples.petclinic.web under the existing component scan, JSP views under WEB-INF/jsp with the petclinic:layout tag and the menu in menu.tag, JUnit Jupiter tests named *Tests.java driving controllers with MockMvc, run by the maven suite dabbler.yaml declares -- and one section per change: the calculator page (Calculator, CalculatorController at /calculator, calculators/calculator.jsp, a menu item, and CalculatorControllerTests) and the documentation comments on what it added, with nothing else changed.",
       "releasable": false
+    },
+    {
+      "kind": "task-declaration",
+      "sessionNumber": 2,
+      "dateTime": "2026-11-10T18:57:50.637000-05:00",
+      "task": "Session 2 appends two numbered sessions to docs/sessions/session-plan.md from docs/planning/solution-plan.md and writes nothing else: Session 3, the calculator page -- Calculator and CalculatorController in the web package, calculators/calculator.jsp in the existing layout, a menu item, and CalculatorControllerTests with MockMvc, run by the wrapper's test -- and Session 4, Javadoc on what session 3 added and a JSP comment atop its view, with no code, markup or build file changed. No release session is planned, because the brief names none.",
+      "releasable": false
     }
   ]
 }
