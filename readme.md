@@ -1,3 +1,4 @@
+# README.md modification by human operator on 2026-11-11
 # Spring PetClinic Sample Application
 
 [![Java CI with Maven](https://github.com/spring-petclinic/spring-framework-petclinic/actions/workflows/maven-build.yml/badge.svg)](https://github.com/spring-petclinic/spring-framework-petclinic/actions/workflows/maven-build.yml)
