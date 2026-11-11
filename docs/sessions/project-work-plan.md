@@ -14,6 +14,8 @@ The numbered sessions are declared from `session-plan.md`; each one's task is wh
 | ---: | --- | --- | --- |
 | 1 | Author or import the change plan | no | 2026-11-10 |
 | 2 | Break the change plan into numbered sessions | no | 2026-11-10 |
+| 3 | The calculator page | no | 2026-11-10 |
+| 4 | Documentation comments on the calculator | — | not declared |
 
 ### Session 1 — Author or import the change plan
 
@@ -26,3 +28,9 @@ Session 1 writes docs/planning/solution-plan.md from docs/planning/brief.md and 
 **Releasable: no.**
 
 Session 2 appends two numbered sessions to docs/sessions/session-plan.md from docs/planning/solution-plan.md and writes nothing else: Session 3, the calculator page -- Calculator and CalculatorController in the web package, calculators/calculator.jsp in the existing layout, a menu item, and CalculatorControllerTests with MockMvc, run by the wrapper's test -- and Session 4, Javadoc on what session 3 added and a JSP comment atop its view, with no code, markup or build file changed. No release session is planned, because the brief names none.
+
+### Session 3 — The calculator page
+
+**Releasable: no.**
+
+Session 3 adds an online calculator page to the Spring Framework petclinic inside its existing shape: src/main/java/org/springframework/samples/petclinic/web/Calculator.java (add and subtract over BigDecimal), src/main/java/org/springframework/samples/petclinic/web/CalculatorController.java mapped to /calculator (GET shows the form, POST adds sum and difference to the model, both returning calculators/calculator) and found by the existing component scan, the view src/main/webapp/WEB-INF/jsp/calculators/calculator.jsp in the petclinic:layout tag, a Calculator item in src/main/webapp/WEB-INF/tags/menu.tag, and src/test/java/org/springframework/samples/petclinic/web/CalculatorControllerTests.java configured like the other controller tests. Each step is shown by the Maven wrapper's test.

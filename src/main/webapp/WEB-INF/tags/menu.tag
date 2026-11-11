@@ -27,6 +27,11 @@
                     <span>Veterinarians</span>
                 </petclinic:menuItem>
 
+                <petclinic:menuItem active="${name eq 'calculator'}" url="/calculator"
+                                    title="add and subtract two numbers" glyph="fa-calculator">
+                    <span>Calculator</span>
+                </petclinic:menuItem>
+
                 <petclinic:menuItem active="${name eq 'error'}" url="/oups"
                             title="trigger a RuntimeException to see how it is handled"
                             glyph="exclamation-triangle">
