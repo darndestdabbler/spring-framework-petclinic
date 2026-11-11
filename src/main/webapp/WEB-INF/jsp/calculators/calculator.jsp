@@ -3,6 +3,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
+<%-- The calculator page: two numbers in, their sum and difference out,
+     posted to CalculatorController at /calculator. --%>
 
 <petclinic:layout pageName="calculator">
 

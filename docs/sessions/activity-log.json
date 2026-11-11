@@ -22,6 +22,13 @@
       "dateTime": "2026-11-10T18:59:14.602000-05:00",
       "task": "Session 3 adds an online calculator page to the Spring Framework petclinic inside its existing shape: src/main/java/org/springframework/samples/petclinic/web/Calculator.java (add and subtract over BigDecimal), src/main/java/org/springframework/samples/petclinic/web/CalculatorController.java mapped to /calculator (GET shows the form, POST adds sum and difference to the model, both returning calculators/calculator) and found by the existing component scan, the view src/main/webapp/WEB-INF/jsp/calculators/calculator.jsp in the petclinic:layout tag, a Calculator item in src/main/webapp/WEB-INF/tags/menu.tag, and src/test/java/org/springframework/samples/petclinic/web/CalculatorControllerTests.java configured like the other controller tests. Each step is shown by the Maven wrapper's test.",
       "releasable": false
+    },
+    {
+      "kind": "task-declaration",
+      "sessionNumber": 4,
+      "dateTime": "2026-11-10T19:03:25.385000-05:00",
+      "task": "Session 4 adds documentation comments to what session 3 added and changes nothing else: Javadoc on Calculator, add and subtract in src/main/java/org/springframework/samples/petclinic/web/Calculator.java and on CalculatorController, showForm and calculate in src/main/java/org/springframework/samples/petclinic/web/CalculatorController.java, and a JSP comment at the top of src/main/webapp/WEB-INF/jsp/calculators/calculator.jsp. Each step is shown by the Maven wrapper's test-compile and by a check that the diff of its files against HEAD only adds comment lines.",
+      "releasable": false
     }
   ]
 }
